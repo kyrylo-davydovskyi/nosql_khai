@@ -1,0 +1,17 @@
+# Ignore compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore environment-specific files
+.env
+.env.*
+
+# Ignore user-specific files
+.idea/
+.vscode/
+
+# Ignore package build directory
+dist/
+build/
+*.egg-info/

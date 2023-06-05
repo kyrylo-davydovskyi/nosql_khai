@@ -22,13 +22,13 @@ def set_db_and_collection():
     databases = service.get_database_names()
     print("Databases:", databases)
 
-    selected_db = 'test' #input("Enter the name of the database: ")
+    selected_db = input("Enter the name of the database: ")
     service.set_database(selected_db)
 
     collections = service.get_collection_names()
     print("Collections:", collections)
 
-    selected_collection = 'users_migrated'#input("Enter the name of the collection: ")
+    selected_collection = input("Enter the name of the collection: ")
     service.set_collection(selected_collection)
 
 

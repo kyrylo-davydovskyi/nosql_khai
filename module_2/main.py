@@ -103,7 +103,7 @@ def edit_document():
 
 
 def delete_document():
-    filter_query = eval(input("Enter the filter for the document(s) to edit (in JSON format): "))
+    filter_query = eval(input("Enter the filter for the document(s) to delete (in JSON format): "))
     documents = service.read_documents(filter_query)
 
     if len(documents) == 0:
